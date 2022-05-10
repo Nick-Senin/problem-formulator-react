@@ -1,0 +1,23 @@
+.usefull_block , .harmfull_block{
+    width:20px; 
+    height:20px; 
+    box-shadow: 0px 0px 4px 4px rgba(65, 191, 191, 0.25);
+    border-radius: 5px;
+    margin:10px;
+}
+
+.usefull_block{
+    background: #53C141;
+}
+
+.harmfull_block{
+    background: #C14141;
+}
+
+.cont{
+
+    display: flex;
+    align-items: center;
+    height: 21px;
+}
+

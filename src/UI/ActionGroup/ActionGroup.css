@@ -1,0 +1,24 @@
+.task-action_cont{
+    display: flex;
+    align-items: center;
+    height: 21px;
+}
+
+.task-action_block{
+}
+
+.task-preview_mode{
+    background-image: url('preview_mode.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px; 
+    height:30px; 
+}
+
+.task-edit_mode{
+    width: 30px ; 
+    height:30px ; 
+    background-image: url('edit_mode.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

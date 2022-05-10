@@ -1,0 +1,21 @@
+.action_cont{
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.action_block{
+   width: 30px ; 
+   height: 30px ; 
+   margin:5px; 
+}
+
+.generate_action{
+   background-image: url('generate.svg') ;
+   background-repeat: no-repeat;
+}
+
+.add_action{
+    background-image: url('add.svg') ;
+}
+
