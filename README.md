@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Problem Formulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interactive visual tool for formulating inventive problems based on TRIZ methodology (Theory of Inventive Problem Solving).
 
-## Available Scripts
+Built with React, Konva (HTML5 Canvas), and Redux.
 
-In the project directory, you can run:
+## What it does
 
-### `npm start`
+Users construct a problem model as a directed graph of **factors** connected by arrows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Useful factors** — desirable outcomes
+- **Harmful factors** — undesirable effects
+- **Contradictions** — factors that must both exist and not exist simultaneously
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Based on the graph structure, the tool automatically generates natural-language task formulations like:
 
-### `npm test`
+> Find an alternative way to achieve **X** that does not require **Y** and provides **Z** without causing **W**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Visual canvas editor for building factor graphs (drag-and-drop blocks and arrows)
+- Automatic task formulation engine (TRIZ-based logic)
+- Markdown preview of generated tasks with syntax highlighting
+- Edit mode / preview mode toggle
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React 18** + Redux for state management
+- **Konva** / react-konva for canvas rendering
+- **react-markdown** + rehype-raw for rich markdown output
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting started
 
-### `npm run eject`
+```bash
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open [http://localhost:3000](http://localhost:3000).
